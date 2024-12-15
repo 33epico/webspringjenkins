@@ -1,5 +1,6 @@
 docker build --tag=webspring .
 docker images
-docker run -p 8083:8083 webspring
+#Se tira con el -d para que lo lance como servicio (daemon)
+docker run -d -p 8083:8083 webspring
 
 docker ps -a*
